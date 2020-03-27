@@ -25,6 +25,7 @@ body {
 
 header .header-bottom {
   background-color: #FAFAFA;
+  height: auto;
   position: relative;
 }
 header .header-bottom .header-bottom__title {
