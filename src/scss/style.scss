@@ -200,8 +200,12 @@
                 }
                 .s-links {
                     padding: 20px 0;
-                    img {
+                    svg {
                         padding: 5px;
+                        fill: #fff;
+                        &:hover{
+                            fill: #31cf6f;
+                        }
                     }
                 }
             }

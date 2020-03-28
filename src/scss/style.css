@@ -196,6 +196,9 @@ footer .logo-and-slinks .s-links {
 footer .logo-and-slinks .s-links img {
   padding: 5px;
 }
+footer .logo-and-slinks .s-links img:hover {
+  color: #31cf6f;
+}
 footer li a {
   padding-bottom: 15px;
   display: block;
