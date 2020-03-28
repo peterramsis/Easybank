@@ -1,11 +1,9 @@
         body {
             font-family: 'Public Sans', sans-serif;
         }
-        
         .navbar {
             padding: 0 !important;
         }
-        
         .active {
             background: linear-gradient( to left, rgb(43, 185, 208) 0%, rgb(45, 190, 185) 12%, rgb(47, 200, 141) 47%, rgb(49, 208, 108) 100%) left bottom #fff no-repeat;
             background-size: 100% 6px;
@@ -17,8 +15,8 @@
         
         .icon-close {
             background-image: url(../images/icon-close.svg) !important;
-            width: 20px;
-            height: 20px;
+            width: 21px;
+            height: 21px;
         }
         
         .navbar-light .navbar-toggler {
