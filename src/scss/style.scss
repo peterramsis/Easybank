@@ -1,13 +1,28 @@
         body {
             font-family: 'Public Sans', sans-serif;
         }
-
-        .navbar{
-            padding:0 !important;
+        
+        .navbar {
+            padding: 0 !important;
         }
-        .active{    background: linear-gradient( to left, rgb(43, 185, 208) 0%, rgb(45, 190, 185) 12%, rgb(47, 200, 141) 47%, rgb(49, 208, 108) 100% ) left bottom #fff no-repeat;
+        
+        .active {
+            background: linear-gradient( to left, rgb(43, 185, 208) 0%, rgb(45, 190, 185) 12%, rgb(47, 200, 141) 47%, rgb(49, 208, 108) 100%) left bottom #fff no-repeat;
             background-size: 100% 6px;
-
+        }
+        
+        .navbar-light .navbar-toggler-icon {
+            transition: all .2s;
+        }
+        
+        .icon-close {
+            background-image: url(../images/icon-close.svg) !important;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .navbar-light .navbar-toggler {
+            border-color: transparent;
         }
         
         $bg-site: #F4F5F7;
@@ -25,9 +40,9 @@
         
         .btn-custom {
             background: #85e3a5;
-            background: -moz-linear-gradient(top, #85e3a5 0%, #81d6d9 100%);
-            background: -webkit-linear-gradient(top, #85e3a5 0%, #81d6d9 100%);
-            background: linear-gradient(to bottom, #85e3a5 0%, #81d6d9 100%);
+            background: -moz-linear-gradient(left, #31d167 0%, #2cbcc5 100%);
+            background: -webkit-linear-gradient(left, #31d167 0%, #2cbcc5 100%);
+            background: linear-gradient(left, #31d167 0%, #2cbcc5 100%);
             color: white;
             border-radius: 20px;
             padding: 7px 30px;
@@ -37,15 +52,14 @@
         }
         
         header {
-            .nav-item{
-                padding:10px 5px; 
-                &:hover{
-                    background: linear-gradient( to left, rgb(43, 185, 208) 0%, rgb(45, 190, 185) 12%, rgb(47, 200, 141) 47%, rgb(49, 208, 108) 100% ) left bottom #fff no-repeat;
-    background-size: 100% 6px;
+            .nav-item {
+                padding: 10px 5px;
+                &:hover {
+                    background: linear-gradient( to left, rgb(43, 185, 208) 0%, rgb(45, 190, 185) 12%, rgb(47, 200, 141) 47%, rgb(49, 208, 108) 100%) left bottom #fff no-repeat;
+                    background-size: 100% 6px;
                     border-image: linear-gradient(to left, #743ad5, #d53a9d);
                 }
             }
-            
             .header-bottom {
                 background-color: #FAFAFA;
                 height: auto;
@@ -82,9 +96,28 @@
         }
         
         @media (max-width:375px) {
+            .navbar-light .navbar-toggler-icon {}
+            .navbar-collapse {
+                position: fixed;
+                top: 104px;
+                width: 80%;
+                z-index: 1001;
+                background-color: rgb(255, 255, 255);
+                left: 32px;
+                text-align: center;
+                .btn-custom {
+                    display: none;
+                }
+            }
             header .header-bottom {
                 height: 1200px;
-                padding-bottom: 10px;
+                padding: 13px 14px !important;
+            }
+            .navbar-toggler {
+                border-color: transparent;
+            }
+            .navbar {
+                padding: 20px 10px !important;
             }
             .block_next_info {
                 order: 2;
@@ -132,23 +165,27 @@
         }
         
         @media (max-width: 375px) {
-            .why_chooes,footer {
+            .why_chooes,
+            footer {
                 text-align: center;
             }
-            
         }
         
         .lastest_articles {
             background-color: #FAFAFA;
             padding: 40px;
             .lastest_articles__title {
-                font-size: 14px;
+                font-size: 12px;
+                color: #bdbcc1;
             }
             .lastest_articles__title__parg {
                 font-size: 17px;
+                &:hover {
+                    color: #76c4aa;
+                }
             }
             p {
-                color: $color-parg;
+                color: #bdbcc1;
                 font-size: 13px;
             }
         }
@@ -169,8 +206,12 @@
                 }
             }
             li a {
-                color: white;
                 padding-bottom: 15px;
                 display: block;
+                color: #fff;
+                text-decoration: none !important;
+                &:hover {
+                    color: #31cf6f;
+                }
             }
         }
