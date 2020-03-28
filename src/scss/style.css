@@ -119,4 +119,24 @@ header .header-bottom .btn-custom {
   color: #95969A;
   font-size: 13px;
 }
+
+footer {
+  background-color: #2d314e;
+  padding: 48px;
+  height: auto;
+}
+footer .logo-and-slinks .logo-footer {
+  padding-bottom: 5px;
+}
+footer .logo-and-slinks .s-links {
+  padding: 20px 0;
+}
+footer .logo-and-slinks .s-links img {
+  padding: 5px;
+}
+footer li a {
+  color: white;
+  padding-bottom: 15px;
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

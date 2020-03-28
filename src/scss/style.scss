@@ -115,9 +115,10 @@
         }
         
         @media (max-width: 375px) {
-            .why_chooes {
+            .why_chooes,footer {
                 text-align: center;
             }
+            
         }
         
         .lastest_articles {
@@ -132,5 +133,27 @@
             p {
                 color: $color-parg;
                 font-size: 13px;
+            }
+        }
+        
+        footer {
+            background-color: #2d314e;
+            padding: 48px;
+            height: auto;
+            .logo-and-slinks {
+                .logo-footer {
+                    padding-bottom: 5px;
+                }
+                .s-links {
+                    padding: 20px 0;
+                    img {
+                        padding: 5px;
+                    }
+                }
+            }
+            li a {
+                color: white;
+                padding-bottom: 15px;
+                display: block;
             }
         }
